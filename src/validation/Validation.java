@@ -45,7 +45,7 @@ public class Validation {
 	}
 	
 	public static void isAValidTelefoneNumber(String telefone) {
-		if ((Long.parseLong(telefone)) <= 0 || (Long.parseLong(telefone)) > 99999999999L) {
+		if ((Long.parseLong(telefone)) <= 1000000 || (Long.parseLong(telefone)) > 99999999999L) {
 			throw new IllegalArgumentException("The ddd can't not be a negative number or a invalid number for a phone");
 		}
 	}
