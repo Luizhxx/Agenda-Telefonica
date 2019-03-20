@@ -40,7 +40,7 @@ public class Validation {
 	
 	public static void isAValidDDD(int ddd) {
 		if (ddd <= 0) {
-			throw new IllegalArgumentException("The ddd can't not be a negative number");
+			throw new IllegalArgumentException("The ddd can't not be a negative number or a number under 1000000");
 		}
 	}
 	
